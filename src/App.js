@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FoodImages from './FoodImages';
+import NameInput from './NameInput';
 import './App.css';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   const [sideId, setSideId] = useState(1);
   const [drinkId, setDrinkId] = useState(1);
   // track the state of orderName
-  const [orderName, setOrderName] = useState('Murphy');
+  const [orderName, setOrderName] = useState('valued customer');
   // an array of instructions
   const [instructions, setInstructions] = useState(['no pickles', 'extra mayo']);
   return (
@@ -17,6 +18,10 @@ function App() {
       <header className="App-header"> 
       Welcome to Speedy Food! The No. 1 fast food restaurant in PDX!
       </header>
+      <hr></hr>
+      <div className="order-form">
+        <NameInput setOrderName={setOrderName} />
+      </div>
       <div>
         <h3>Order for: {orderName}</h3>
         <FoodImages 
@@ -24,7 +29,7 @@ function App() {
           sideId={sideId}
           drinkId={drinkId} />
       </div>
-
+      
     </div>
   );
 }
