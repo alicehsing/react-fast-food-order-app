@@ -46,6 +46,10 @@ html body #root .App {
   align-items: center;
 }
 
+.order-form{
+  margin: 20px;
+}
+
 .food-img {
   height: 150px;
   width: 200px;

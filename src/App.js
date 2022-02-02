@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import FoodImages from './FoodImages';
 import NameInput from './NameInput';
+import FoodDropdown from './FoodDropdown';
+import SideDropdown from './SideDropdown';
+import DrinkDropdown from './DrinkDropdown';
 import './App.css';
 
 function App() {
@@ -21,6 +24,10 @@ function App() {
       <hr></hr>
       <div className="order-form">
         <NameInput setOrderName={setOrderName} />
+        <br></br>
+        <FoodDropdown setFoodId={setFoodId} />
+        <SideDropdown setSideId={setSideId} />
+        <DrinkDropdown setDrinkId={setDrinkId} />
       </div>
       <div>
         <h3>Order for: {orderName}</h3>
