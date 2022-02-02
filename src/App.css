@@ -48,11 +48,24 @@ html body #root .App {
 
 .order-form{
   margin: 20px;
+  background-color: rgb(233, 224, 224);
 }
 
+
 .food-img {
-  height: 150px;
-  width: 200px;
+  height: 180px;
+  width: 250px;
   margin: 40px;
+  border: inset 5px orange;
   border-radius: 5px;
+}
+
+form {
+  margin: 20px;
+  background-color: rgb(233, 224, 224);
+}
+
+input {
+  padding: 2px;
+  margin: 10px;
 }
