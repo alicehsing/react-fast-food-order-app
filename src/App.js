@@ -4,6 +4,8 @@ import NameInput from './NameInput';
 import FoodDropdown from './FoodDropdown';
 import SideDropdown from './SideDropdown';
 import DrinkDropdown from './DrinkDropdown';
+import InstructionForm from './InstructionForm';
+import InstructionsList from './InstructionsList';
 import './App.css';
 
 function App() {
@@ -28,6 +30,12 @@ function App() {
         <FoodDropdown setFoodId={setFoodId} />
         <SideDropdown setSideId={setSideId} />
         <DrinkDropdown setDrinkId={setDrinkId} />
+        <InstructionForm 
+          instructions={instructions} 
+          setInstructions={setInstructions} />
+      </div>
+      <div className="instruction-list">
+        <InstructionsList instructions={instructions} />
       </div>
       <div>
         <h3>Order for: {orderName}</h3>
